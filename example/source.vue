@@ -1,5 +1,5 @@
-<template src='./sss'>
-<div>M</div>
+<template>
+  <test-com jiai-register="../kkk/index.vue">M</test-com>
 </template>
 
 <script>
@@ -18,9 +18,3 @@ export default {
 }
 </style>
 
-"
-./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!
-./node_modules/pug-plain-loader/index.js!
-./node_modules/vue-loader/lib/index.js??vue-loader-options
-./lib/index.js
-./example/source.vue?vue&type=template&id=27e4e96e&lang=pug&"

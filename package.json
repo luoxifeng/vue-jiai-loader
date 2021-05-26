@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/luoxifeng/vue-jiai-loader#readme",
   "dependencies": {
+    "@babel/parser": "^7.14.3",
     "htmlparser2": "^6.1.0",
     "vue-loader": "^15.9.7",
     "vue-template-compiler": "^2.6.12"

@@ -7,7 +7,7 @@
   resolved "http://npm.devops.xiaohongshu.com:7001/@babel/helper-validator-identifier/download/@babel/helper-validator-identifier-7.14.0.tgz#d26cad8a47c65286b15df1547319a5d0bcf27288"
   integrity sha1-0mytikfGUoaxXfFUcxml0Lzycog=
 
-"@babel/parser@^7.6.0", "@babel/parser@^7.9.6":
+"@babel/parser@^7.14.3", "@babel/parser@^7.6.0", "@babel/parser@^7.9.6":
   version "7.14.3"
   resolved "http://npm.devops.xiaohongshu.com:7001/@babel/parser/download/@babel/parser-7.14.3.tgz#9b530eecb071fd0c93519df25c5ff9f14759f298"
   integrity sha1-m1MO7LBx/QyTUZ3yXF/58UdZ8pg=

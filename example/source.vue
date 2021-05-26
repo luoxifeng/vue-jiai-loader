@@ -13,9 +13,7 @@ export default {
       msg: "fesdff111dddsddssddffgc"
     };
   },
-  components: {
-    // /* jiai-register: extend */
-  },
+
   /* jiai-register: inject */
 };
 </script>

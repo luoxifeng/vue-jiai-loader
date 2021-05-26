@@ -7,7 +7,7 @@ export default {
   /* jiai-register: inject */
   data() {
     return {
-      msg: "test-comp-0-11222"
+      msg: "test-comp-0-1122jjjjj2"
     };
   },
   components: {

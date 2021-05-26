@@ -1,13 +1,13 @@
 <template>
-  <test-com jiai-register="./test.vue">M</test-com>
+  <div>{{ msg }}</div>
 </template>
 
 <script>
 export default {
-  // /* jiai-register: inject */
+  /* jiai-register: inject */
   data() {
     return {
-      msg: "fesdff111dddssdfg"
+      msg: "test-compd1d"
     };
   },
   components: {

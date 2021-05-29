@@ -2,15 +2,99 @@
 # yarn lockfile v1
 
 
+"@babel/code-frame@^7.12.13":
+  version "7.12.13"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@babel/code-frame/download/@babel/code-frame-7.12.13.tgz#dcfc826beef65e75c50e21d3837d7d95798dd658"
+  integrity sha1-3PyCa+72XnXFDiHTg319lXmN1lg=
+  dependencies:
+    "@babel/highlight" "^7.12.13"
+
+"@babel/generator@^7.14.2", "@babel/generator@^7.14.3":
+  version "7.14.3"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@babel/generator/download/@babel/generator-7.14.3.tgz#0c2652d91f7bddab7cccc6ba8157e4f40dcedb91"
+  integrity sha1-DCZS2R973at8zMa6gVfk9A3O25E=
+  dependencies:
+    "@babel/types" "^7.14.2"
+    jsesc "^2.5.1"
+    source-map "^0.5.0"
+
+"@babel/helper-function-name@^7.14.2":
+  version "7.14.2"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@babel/helper-function-name/download/@babel/helper-function-name-7.14.2.tgz#397688b590760b6ef7725b5f0860c82427ebaac2"
+  integrity sha1-OXaItZB2C273cltfCGDIJCfrqsI=
+  dependencies:
+    "@babel/helper-get-function-arity" "^7.12.13"
+    "@babel/template" "^7.12.13"
+    "@babel/types" "^7.14.2"
+
+"@babel/helper-get-function-arity@^7.12.13":
+  version "7.12.13"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@babel/helper-get-function-arity/download/@babel/helper-get-function-arity-7.12.13.tgz#bc63451d403a3b3082b97e1d8b3fe5bd4091e583"
+  integrity sha1-vGNFHUA6OzCCuX4diz/lvUCR5YM=
+  dependencies:
+    "@babel/types" "^7.12.13"
+
+"@babel/helper-split-export-declaration@^7.12.13":
+  version "7.12.13"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@babel/helper-split-export-declaration/download/@babel/helper-split-export-declaration-7.12.13.tgz#e9430be00baf3e88b0e13e6f9d4eaf2136372b05"
+  integrity sha1-6UML4AuvPoiw4T5vnU6vITY3KwU=
+  dependencies:
+    "@babel/types" "^7.12.13"
+
 "@babel/helper-validator-identifier@^7.14.0":
   version "7.14.0"
   resolved "http://npm.devops.xiaohongshu.com:7001/@babel/helper-validator-identifier/download/@babel/helper-validator-identifier-7.14.0.tgz#d26cad8a47c65286b15df1547319a5d0bcf27288"
   integrity sha1-0mytikfGUoaxXfFUcxml0Lzycog=
 
+"@babel/highlight@^7.12.13":
+  version "7.14.0"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@babel/highlight/download/@babel/highlight-7.14.0.tgz#3197e375711ef6bf834e67d0daec88e4f46113cf"
+  integrity sha1-MZfjdXEe9r+DTmfQ2uyI5PRhE88=
+  dependencies:
+    "@babel/helper-validator-identifier" "^7.14.0"
+    chalk "^2.0.0"
+    js-tokens "^4.0.0"
+
+"@babel/parser@^7.12.13", "@babel/parser@^7.14.2":
+  version "7.14.4"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@babel/parser/download/@babel/parser-7.14.4.tgz#a5c560d6db6cd8e6ed342368dea8039232cbab18"
+  integrity sha1-pcVg1tts2ObtNCNo3qgDkjLLqxg=
+
 "@babel/parser@^7.14.3", "@babel/parser@^7.6.0", "@babel/parser@^7.9.6":
   version "7.14.3"
   resolved "http://npm.devops.xiaohongshu.com:7001/@babel/parser/download/@babel/parser-7.14.3.tgz#9b530eecb071fd0c93519df25c5ff9f14759f298"
   integrity sha1-m1MO7LBx/QyTUZ3yXF/58UdZ8pg=
+
+"@babel/template@^7.12.13":
+  version "7.12.13"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@babel/template/download/@babel/template-7.12.13.tgz#530265be8a2589dbb37523844c5bcb55947fb327"
+  integrity sha1-UwJlvooliduzdSOETFvLVZR/syc=
+  dependencies:
+    "@babel/code-frame" "^7.12.13"
+    "@babel/parser" "^7.12.13"
+    "@babel/types" "^7.12.13"
+
+"@babel/traverse@^7.14.2":
+  version "7.14.2"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@babel/traverse/download/@babel/traverse-7.14.2.tgz#9201a8d912723a831c2679c7ebbf2fe1416d765b"
+  integrity sha1-kgGo2RJyOoMcJnnH678v4UFtdls=
+  dependencies:
+    "@babel/code-frame" "^7.12.13"
+    "@babel/generator" "^7.14.2"
+    "@babel/helper-function-name" "^7.14.2"
+    "@babel/helper-split-export-declaration" "^7.12.13"
+    "@babel/parser" "^7.14.2"
+    "@babel/types" "^7.14.2"
+    debug "^4.1.0"
+    globals "^11.1.0"
+
+"@babel/types@^7.12.13", "@babel/types@^7.14.2", "@babel/types@^7.14.4":
+  version "7.14.4"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@babel/types/download/@babel/types-7.14.4.tgz#bfd6980108168593b38b3eb48a24aa026b919bc0"
+  integrity sha1-v9aYAQgWhZOziz60iiSqAmuRm8A=
+  dependencies:
+    "@babel/helper-validator-identifier" "^7.14.0"
+    to-fast-properties "^2.0.0"
 
 "@babel/types@^7.6.1", "@babel/types@^7.9.6":
   version "7.14.2"
@@ -1107,7 +1191,7 @@ chalk@^1.1.3:
     strip-ansi "^3.0.0"
     supports-color "^2.0.0"
 
-chalk@^2.4.2:
+chalk@^2.0.0, chalk@^2.4.2:
   version "2.4.2"
   resolved "http://npm.devops.xiaohongshu.com:7001/chalk/download/chalk-2.4.2.tgz#cd42541677a54333cf541a49108c1432b44c9424"
   integrity sha1-zUJUFnelQzPPVBpJEIwUMrRMlCQ=
@@ -1935,6 +2019,11 @@ glob@^7.0.3, glob@^7.1.3:
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
+globals@^11.1.0:
+  version "11.12.0"
+  resolved "http://npm.devops.xiaohongshu.com:7001/globals/download/globals-11.12.0.tgz#ab8795338868a0babd8525758018c2a7eb95c42e"
+  integrity sha1-q4eVM4hooLq9hSV1gBjCp+uVxC4=
+
 globals@^9.18.0:
   version "9.18.0"
   resolved "http://npm.devops.xiaohongshu.com:7001/globals/download/globals-9.18.0.tgz#aa3896b3e69b487f17e31ed2143d69a8e30c2d8a"
@@ -2444,7 +2533,7 @@ js-stringify@^1.0.2:
   resolved "http://npm.devops.xiaohongshu.com:7001/js-stringify/download/js-stringify-1.0.2.tgz#1736fddfd9724f28a3682adc6230ae7e4e9679db"
   integrity sha1-Fzb939lyTyijaCrcYjCufk6Weds=
 
-"js-tokens@^3.0.0 || ^4.0.0":
+"js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
   resolved "http://npm.devops.xiaohongshu.com:7001/js-tokens/download/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
   integrity sha1-GSA/tZmR35jjoocFDUZHzerzJJk=
@@ -2458,6 +2547,11 @@ jsesc@^1.3.0:
   version "1.3.0"
   resolved "http://npm.devops.xiaohongshu.com:7001/jsesc/download/jsesc-1.3.0.tgz#46c3fec8c1892b12b0833db9bc7622176dbab34b"
   integrity sha1-RsP+yMGJKxKwgz25vHYiF226s0s=
+
+jsesc@^2.5.1:
+  version "2.5.2"
+  resolved "http://npm.devops.xiaohongshu.com:7001/jsesc/download/jsesc-2.5.2.tgz#80564d2e483dacf6e8ef209650a67df3f0c283a4"
+  integrity sha1-gFZNLkg9rPbo7yCWUKZ98/DCg6Q=
 
 jsesc@~0.5.0:
   version "0.5.0"
@@ -3854,7 +3948,7 @@ source-map-url@^0.4.0:
   resolved "http://npm.devops.xiaohongshu.com:7001/source-map-url/download/source-map-url-0.4.1.tgz#0af66605a745a5a2f91cf1bbf8a7afbc283dec56"
   integrity sha1-CvZmBadFpaL5HPG7+KevvCg97FY=
 
-source-map@^0.5.6, source-map@^0.5.7:
+source-map@^0.5.0, source-map@^0.5.6, source-map@^0.5.7:
   version "0.5.7"
   resolved "http://npm.devops.xiaohongshu.com:7001/source-map/download/source-map-0.5.7.tgz#8a039d2d1021d22d1ea14c80d8ea468ba2ef3fcc"
   integrity sha1-igOdLRAh0i0eoUyA2OpGi6LvP8w=

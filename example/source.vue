@@ -7,14 +7,11 @@
 
 <script>
 export default {
-  
   data() {
     return {
       msg: "fesdff111dddsddssddffgc"
     };
   },
-
-  /* jiai-register: inject */
 };
 </script>
 

@@ -23,7 +23,6 @@ module.exports = {
           loader: 'vue-jiai-loader',
           options: {
             register: true,
-            warn: true,
           }
         }]
       },

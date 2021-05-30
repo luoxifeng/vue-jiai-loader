@@ -1,6 +1,8 @@
 # vue-jiai-loader
 Jia  AI 分析vue template 里面自定义组件 以及组件路径自动地import组件并且注册，以此可以在书写vue sfc的时候可以省略掉组件引用以及注册，让代码变得更简洁
+
 ## 效果
+
 - 普通写法
 ```html
 <template >
@@ -64,8 +66,39 @@ export default {
 </script>
 ```
 
+## webpack配置
 
-## 使用
+```js
+module.exports = {
+  // ... some config
+  module: {
+    rules: [
+      {
+        test: /\.vue$/,
+        use: [
+          'vue-loader', 
+          {
+            loader: 'vue-jiai-loader',
+            options: {
+              register: true,
+            }
+          }
+        ]
+      },
+    }
+  },
+  // ... some config
+}
+```
+## 魔法注释 (可选)
+
+- inject `/* jiai-register: inject */`
+```html
+```
+
+- extend `/* jiai-register: extend */`
+```html
+```
 
 ## 使用限制
 - template和script标签必须同时存在并且都不能采用src的方式引用

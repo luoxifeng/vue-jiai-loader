@@ -16,7 +16,7 @@
 export default {
   data() {
     return {
-      msg: "x'x",
+      msg: "xx",
     };
   },
 };

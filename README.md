@@ -1,7 +1,7 @@
 # vue-jiai-loader
 Jia  AI 分析vue template 里面自定义组件 以及组件路径自动地import组件并且注册，以此可以在书写vue sfc的时候可以省略掉组件引用以及注册，让代码变得更简洁
 
-## 效果
+## 使用对比
 
 - 普通写法
 ```html
@@ -13,7 +13,6 @@ Jia  AI 分析vue template 里面自定义组件 以及组件路径自动地impo
     <test-com3 /> 
     <test-com4 /> 
     <test-com5 /> 
-    <test-com6 /> 
   </div>
 </template>
 
@@ -24,8 +23,6 @@ import TestCom2 from './test-com2';
 import TestCom3 from './test-com3';
 import TestCom4 from './test-com4';
 import TestCom5 from './test-com5';
-
-
 
 export default {
   components: {
@@ -43,7 +40,8 @@ export default {
 };
 </script>
 ```
-- 使用jiai写法
+
+- 接入`jiai-loader`写法
 ```html
 <template >
   <div>

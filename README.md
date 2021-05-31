@@ -53,6 +53,7 @@ export default {
     <test-com3 jiai-register='./test-com3' /> 
     <test-com4 jiai-register='./test-com4' /> 
     <test-com5 jiai-register='./test-com5' /> 
+    <test-com0 /> <!-- 同名组件只需要注册一次 -->
   </div>
 </template>
 

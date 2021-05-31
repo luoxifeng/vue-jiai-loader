@@ -101,6 +101,55 @@ module.exports = {
 ```html
 ```
 
+## 注意
+- 同名的组件只需要注册一次，后面出现的注册会被忽略
+```html
+<template >
+  <div>
+    <test-com0 jiai-register='./test-com0' />
+    <test-com1 jiai-register='./test-com1' />
+    <test-com0 jiai-register='./test-com2' />
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+    };
+  },
+};
+</script>
+```
+上面的例子会被处理成
+
+```html
+<template >
+  <div>
+    <test-com0 jiai-register='./test-com0' />
+    <test-com1 jiai-register='./test-com1' />
+    <test-com0 jiai-register='./test-com2' /> <!-- 这里的注册会被忽略，尽管注册的地址不一样 -->
+  </div>
+</template>
+
+<script>
+import TestCom0 from './test-com0'
+import TestCom1 from './test-com1'
+
+const __jiai_orign_export__ = {
+  data() {
+    return {
+    };
+  },
+};
+const __jiai_inject_components__ = { TestCom0, TestCom1 };
+const __jiai_runtime_merge__ = (t, s) => (t.components = Object.assign(t.components || {}, s), t)
+export default __jiai_runtime_merge__(__jiai_origin_export__, __jiai_inject_components__);
+</script>
+```
+从上面的处理结果来看，如果同名的组件注册多次，只会取第一次出现的注册，后面的注册（不管注册的地址是不是一样的）会被忽略，`同名的组件就是一个组件`
+
+
 ## 使用限制
 - template和script标签必须同时存在并且都不能采用src的方式引用
 - template暂时只支持html，不支持pug等

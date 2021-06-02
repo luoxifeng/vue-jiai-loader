@@ -1,4 +1,4 @@
-<template >
+<template>
   <div>
     <test-com jiai-register="./test.vue">M</test-com>
     <test />

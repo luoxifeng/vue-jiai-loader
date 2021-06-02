@@ -3,8 +3,9 @@ Jia  AI 分析vue template 里面自定义组件 以及组件路径自动地impo
 
 ## 使用对比
 
-- 普通写法
+- 默认导入
 ```html
+<!-- 普通写法 -->
 <template >
   <div>
     <test-com0 />
@@ -39,10 +40,8 @@ export default {
   },
 };
 </script>
-```
 
-- 接入`jiai-loader`写法
-```html
+<!-- jiai写法 -->
 <template >
   <div>
     <test-com0 jiai-register='./test-com0' />
@@ -63,6 +62,66 @@ export default {
   },
 };
 </script>
+```
+
+- 混合导入
+```html
+<!-- 普通写法 -->
+<template >
+  <div>
+    <test-com0 />
+    <test-com1 />
+    <test-com2 />
+    <test-com3 /> 
+    <test-com4 /> 
+    <test-com5 /> 
+  </div>
+</template>
+
+<script>
+import TestCom0, {
+  TestCom1,
+  TestCom2,
+  TestCom3,
+  TestCom4,
+  TestCom5,
+} from './test-com';
+
+export default {
+  components: {
+    TestCom0,
+    TestCom1,
+    TestCom2,
+    TestCom3,
+    TestCom4,
+    TestCom5,
+  },
+  data() {
+    return {
+    };
+  },
+};
+
+<!-- jiai写法 -->
+<template >
+  <div>
+    <test-com0 jiai-group-xxx jiai-register='./test-com'/>
+    <test-com1 jiai-group-xxx />
+    <test-com2 jiai-group-xxx />
+    <test-com3 jiai-group-xxx /> 
+    <test-com4 jiai-group-xxx /> 
+    <test-com5 jiai-group-xxx /> 
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+    };
+  },
+};
+
 ```
 
 ## webpack配置
@@ -96,7 +155,11 @@ module.exports = {
 ```html
 ```
 
-- jiai-register-inner
+- jiai-register-inner (待实现)
+```html
+```
+
+- jiai-group-xxx  (待实现)
 ```html
 ```
 

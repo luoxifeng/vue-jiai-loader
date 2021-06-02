@@ -101,7 +101,7 @@ export default {
     };
   },
 };
-<script>
+</script>
 
 <!-- jiai写法 -->
 <template >
@@ -122,7 +122,7 @@ export default {
     };
   },
 };
-<script>
+</script>
 ```
 
 ## webpack配置

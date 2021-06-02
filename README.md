@@ -89,6 +89,17 @@ module.exports = {
   // ... some config
 }
 ```
+
+## 用法
+
+- jiai-register-default (别名jiai-register)
+```html
+```
+
+- jiai-register-inner
+```html
+```
+
 ## 魔法注释 (可选)
 
 - inject `/* jiai-register: inject */`
@@ -105,7 +116,7 @@ module.exports = {
 <template >
   <div>
     <test-com0 jiai-register='./test-com0' />
-    <test-com1 jiai-register='./test-com1' />
+    <test-com1 jiai-register-inner='./test-com1' />
     <test-com0 jiai-register='./test-com2' />
   </div>
 </template>
@@ -125,14 +136,14 @@ export default {
 <template >
   <div>
     <test-com0 jiai-register='./test-com0' />
-    <test-com1 jiai-register='./test-com1' />
+    <test-com1 jiai-register-inner='./test-com1' />
     <test-com0 jiai-register='./test-com2' /> <!-- 这里的注册会被忽略，尽管注册的地址不一样 -->
   </div>
 </template>
 
 <script>
 import TestCom0 from './test-com0'
-import TestCom1 from './test-com1'
+import { TestCom1 } from './test-com1'
 
 const __jiai_orign_export__ = {
   data() {

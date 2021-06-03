@@ -164,16 +164,6 @@ module.exports = {
 ```html
 ```
 
-## 魔法注释 (可选)
-
-- inject `/* jiai-register: inject */`
-```html
-```
-
-- extend `/* jiai-register: extend */`
-```html
-```
-
 ## 注意
 - 同名的组件只需要注册一次，后面出现的注册会被忽略
 ```html

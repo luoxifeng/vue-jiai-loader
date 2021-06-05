@@ -13,11 +13,11 @@
   </div>
 </template>
 
-<script src='./kk.js' jiai-register="true">
+<script  >
 export default {
   data() {
     return {
-      msg: "xddx",
+      msg: "xddxc12s",
     };
   },
 };

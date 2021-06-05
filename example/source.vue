@@ -9,14 +9,15 @@
     <test-com1>M</test-com1>
     <test jiai-register="./test.vue">M</test>
     <test-com1>M</test-com1>
+    {{msg}}
   </div>
 </template>
 
-<script>
+<script src='./kk.js' jiai-register="true">
 export default {
   data() {
     return {
-      msg: "xx",
+      msg: "xddx",
     };
   },
 };

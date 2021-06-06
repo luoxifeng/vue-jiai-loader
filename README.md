@@ -213,8 +213,11 @@ export default __jiai_runtime_merge__(__jiai_origin_export__, __jiai_inject_comp
 从上面的处理结果来看，如果同名的组件注册多次，只会取第一次出现的注册，后面的注册（不管注册的地址是不是一样的）会被忽略，`同名的组件就是一个组件`
 
 
+
 ## 使用限制
+- script 标签上启用jiai代表强制模式，不满足条件会报错
 - template和script标签必须同时存在并且都不能采用src的方式引用
 - template暂时只支持html，不支持pug等
+
 
 

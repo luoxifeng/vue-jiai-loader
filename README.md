@@ -44,12 +44,12 @@ export default {
 <!-- jiai写法 -->
 <template >
   <div>
-    <test-com0 jiai-register='./test-com0' />
-    <test-com1 jiai-register='./test-com1' />
-    <test-com2 jiai-register='./test-com2' />
-    <test-com3 jiai-register='./test-com3' /> 
-    <test-com4 jiai-register='./test-com4' /> 
-    <test-com5 jiai-register='./test-com5' /> 
+    <test-com0 jiai-on='./test-com0' />
+    <test-com1 jiai-on='./test-com1' />
+    <test-com2 jiai-on='./test-com2' />
+    <test-com3 jiai-on='./test-com3' /> 
+    <test-com4 jiai-on='./test-com4' /> 
+    <test-com5 jiai-on='./test-com5' /> 
     <test-com0 /> <!-- 同名组件只需要注册一次 -->
   </div>
 </template>
@@ -106,12 +106,12 @@ export default {
 <!-- jiai写法 -->
 <template >
   <div>
-    <test-com0 jiai-group-xxx jiai-register='./test-com'/>
-    <test-com1 jiai-group-xxx />
-    <test-com2 jiai-group-xxx />
-    <test-com3 jiai-group-xxx /> 
-    <test-com4 jiai-group-xxx /> 
-    <test-com5 jiai-group-xxx /> 
+    <test-com0 jiai-xxx jiai-on='./test-com'/>
+    <test-com1 jiai-xxx />
+    <test-com2 jiai-xxx />
+    <test-com3 jiai-xxx /> 
+    <test-com4 jiai-xxx /> 
+    <test-com5 jiai-xxx /> 
   </div>
 </template>
 
@@ -152,15 +152,18 @@ module.exports = {
 
 ## 用法
 
-- jiai-register-default (别名jiai-register)
+- jiai-on
+> 被解析成默认导入
 ```html
 ```
 
-- jiai-register-inner (待实现)
+- jiai-in (待实现)
+> 被解析成结构导入
 ```html
 ```
 
-- jiai-group-xxx  (待实现)
+- jiai-xxx (待实现)
+> 被解析成使用相同分组的导入
 ```html
 ```
 
@@ -169,9 +172,9 @@ module.exports = {
 ```html
 <template >
   <div>
-    <test-com0 jiai-register='./test-com0' />
-    <test-com1 jiai-register-inner='./test-com1' />
-    <test-com0 jiai-register='./test-com2' />
+    <test-com0 jiai-on='./test-com0' />
+    <test-com1 jiai-on='./test-com1' />
+    <test-com0 jiai-on='./test-com2' />
   </div>
 </template>
 
@@ -189,9 +192,9 @@ export default {
 ```html
 <template >
   <div>
-    <test-com0 jiai-register='./test-com0' />
-    <test-com1 jiai-register-inner='./test-com1' />
-    <test-com0 jiai-register='./test-com2' /> <!-- 这里的注册会被忽略，尽管注册的地址不一样 -->
+    <test-com0 jiai-on='./test-com0' />
+    <test-com1 jiai-on='./test-com1' />
+    <test-com0 jiai-on='./test-com2' /> <!-- 这里的注册会被忽略，尽管注册的地址不一样 -->
   </div>
 </template>
 

@@ -150,12 +150,57 @@ module.exports = {
 }
 ```
 
+## 原理
+
+
 ## 用法
 
-- jiai-on
-> 被解析成默认导入
+- `jiai-on` 被解析成默认导入  
+原始代码
 ```html
+<template >
+  <div>
+    <test-com0 jiai-on='./test-com0' />
+    <test-com1 jiai-on='./test-com1' />
+    <test-com0 />
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+    };
+  },
+};
+</script>
 ```
+被jiai处理后
+```html
+<template >
+  <div>
+    <test-com0 jiai-on='./test-com0' />
+    <test-com1 jiai-on='./test-com1' />
+    <test-com0 />
+  </div>
+</template>
+
+<script>
+import TestCom0 from './test-com0'
+
+const __jiai_orign_export__ = {
+  data() {
+    return {
+    };
+  },
+};
+const __jiai_inject_components__ = { TestCom0 };
+const __jiai_runtime_merge__ = (t, s) => (t.components = Object.assign(t.components || {}, s), t)
+export default __jiai_runtime_merge__(__jiai_origin_export__, __jiai_inject_components__);
+</script>
+
+```
+
 
 - jiai-in (待实现)
 > 被解析成结构导入
@@ -193,7 +238,7 @@ export default {
 <template >
   <div>
     <test-com0 jiai-on='./test-com0' />
-    <test-com1 jiai-on='./test-com1' />
+    <test-com1 jiai-in='./test-com1' />
     <test-com0 jiai-on='./test-com2' /> <!-- 这里的注册会被忽略，尽管注册的地址不一样 -->
   </div>
 </template>

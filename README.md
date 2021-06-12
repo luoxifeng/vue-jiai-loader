@@ -187,6 +187,7 @@ export default {
 
 <script>
 import TestCom0 from './test-com0'
+import TestCom1 from './test-com1'
 
 const __jiai_orign_export__ = {
   data() {
@@ -194,11 +195,10 @@ const __jiai_orign_export__ = {
     };
   },
 };
-const __jiai_inject_components__ = { TestCom0 };
+const __jiai_inject_components__ = { TestCom0, TestCom1 };
 const __jiai_runtime_merge__ = (t, s) => (t.components = Object.assign(t.components || {}, s), t)
 export default __jiai_runtime_merge__(__jiai_origin_export__, __jiai_inject_components__);
 </script>
-
 ```
 
 
